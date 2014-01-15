@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	
+	<TextView
+		android:id="@+id/status"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="12dp"
+		android:layout_marginEnd="12dp"
+		android:layout_marginTop="12dp"
+		android:textSize="22sp"
+		android:text="@string/system_update_to_date" />
+		
+	<TextView
+		android:id="@+id/last_check"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="12dp"
+		android:layout_marginEnd="12dp"
+		android:layout_marginTop="12dp"
+		android:textSize="16sp"
+		android:text="@string/last_checked"
+		android:layout_below="@+id/status" />
+	
+	<RelativeLayout
+		android:id="@+id/progress_group"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_below="@id/status"
+		android:visibility="gone">
+		<ProgressBar android:id="@+id/progress"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="12dip"
+			android:layout_marginBottom="1dip"
+			android:layout_marginStart="10dip"
+			android:layout_marginEnd="10dip"
+			android:layout_centerHorizontal="true" />
+		<TextView
+			android:id="@+id/progress_percent"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="12dip"
+			android:layout_marginStart="10dip"
+			android:layout_marginEnd="10dip"
+			android:layout_alignParentStart="true"
+			android:layout_below="@id/progress"
+			/>
+		<TextView
+			android:id="@+id/progress_number"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="12dip"
+			android:layout_marginStart="10dip"
+			android:layout_marginEnd="10dip"
+			android:layout_alignParentEnd="true"
+			android:layout_below="@id/progress"
+			/>
+	</RelativeLayout>
+	
+	<ProgressBar  
+		android:id="@+id/progress_switching"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		style="?android:attr/progressBarStyleLarge"
+		android:visibility="gone"
+		/> 
+
+	<Button
+		android:id="@+id/check_update_button"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="20dip"
+		android:layout_marginBottom="12dip"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/check_now"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginStart="10dip"
+		android:layout_marginEnd="10dip"/>
+		
+	<Button
+		android:id="@+id/download_button"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="20dip"
+		android:layout_marginBottom="12dip"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/download_pause"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginStart="10dip"
+		android:layout_marginEnd="10dip"
+		android:visibility="gone"/>
+
+</RelativeLayout>

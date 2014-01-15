@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General -->
+    <skip />
+    <!-- Application name -->
+    <string name="application_name">OTA Client</string>
+    
+	<string name="system_update_to_date">Your system is update to date</string>
+	<string name="system_update_detecting">Your system is checking update</string>
+	<string name="system_update_detected">A new update is available</string>
+	<string name="system_update_downloading">Your system is downloading update</string>
+	<string name="system_update_download_start">Your system is starting download</string>
+	<string name="system_update_download_stop">Your update download is stopped</string>
+	<string name="system_update_download_install">Please install the update</string>
+	<string name="last_checked">Last checked for update at </string>
+	<string name="check_now">Check now</string>
+	<string name="network_not_available">Network is not available, please try later</string>
+	<string name="network_wifi_not_available">Wifi is not available, please ensure wifi connected</string>
+	<string name="is_detecting">Your system is detecting</string>
+	<string name="download">Download</string>
+	<string name="download_pause">Pause</string>
+	<string name="download_continue">Continue</string>
+	<string name="download_install">Install</string>
+	
+	<string name="err_version_not_exist">Corresponding version does not exist</string>
+	<string name="err_wifi_not_connected">Wifi is disconnected</string>
+	<string name="err_md5_check_fail">Download failed</string>
+
+</resources>
